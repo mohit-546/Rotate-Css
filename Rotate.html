@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .my div{
+            height: 300px;
+            background-color: rgb(180, 150, 114);
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        p{
+            text-align: center;
+            font-size: 25px;
+        }
+        .div1{
+            position: relative;
+            margin: auto;
+            height: 150px;
+            width: 200px;
+            padding: 10px;
+            border: 2px sloid black;
+        }
+        .div2 {
+            padding: 50px;
+            position: absolute;
+            border: 2px solid rgb(10, 10, 10);
+            background-color: blueviolet;
+            animation: rotateDiv 5s linear infinite;
+        }
+        @keyframes rotateDiv {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1> The Rotate Property</h1>
+    <div class="my div">
+<div class="div1"> Div 1
+    <div class="div2"> Div2</div>
+</div>
+<br>
+<p> Try Rotate Property And Enjoy</p>
+    </div>
+</body>
+</html>
